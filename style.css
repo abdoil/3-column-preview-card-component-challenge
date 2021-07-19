@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+  margin-bottom: 84px;
+}
+
+h3 {
+  font-family: "Big Shoulders Display", cursive;
+  color: hsl(0, 0%, 95%);
+  text-transform: uppercase;
+  font-size: 25px;
+  margin-top: 38px;
+  margin-bottom: 38px;
+}
+
+.container {
+  max-width: 918px;
+  margin: auto;
+  height: 500px;
+  display: flex;
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 48px;
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+  padding: 48px;
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 48px;
+}
+
+button {
+  width: 145px;
+  height: 45px;
+  border-radius: 25px;
+  border: none;
+  font-family: "Lexend Deca", sans-serif;
+  color: hsl(179, 100%, 13%);
+  cursor: pointer;
+  outline: none;
+}
+
+.sedans button {
+  color: hsl(31, 77%, 52%);
+}
+
+.suds button {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury button {
+  color: hsl(179, 100%, 13%);
+}
+
+button:active,
+button:hover {
+  border: 2px solid hsl(0, 0%, 95%);
+  background-color: inherit;
+  color: hsl(0, 0%, 95%);
+}
+
+.attribution {
+  font-family: "Lexend Deca", sans-serif;
+  position: absolute;
+  font-size: 11px;
+  text-align: center;
+  bottom: 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Mobile and tablet view */
+@media only screen and (max-width: 660px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 325px;
+    height: 440px;
+  }
+
+  .sedans {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .luxury {
+    border-radius: 0 0 10px 10px;
+  }
+
+  .attribution {
+    top: -1px;
+  }
+}
