@@ -19,8 +19,7 @@ Thanks for checking out this front-end coding challenge.
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://your-solution-url.com)
-- Live Site URL: [Netlify](https://profilecardcomp-abdoil.netlify.app/)
+- Live Site URL: [Netlify](3-column-preview-challenge.netlify.app)
 
 ## My process
 
